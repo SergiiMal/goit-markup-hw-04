@@ -173,6 +173,19 @@ address {
   padding-bottom: 200px;
 }
 
+.overlay{
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;  
+  content:'';
+  background-image: 
+  url(../img/Overlay.jpg) ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 .hero-title {  
   margin-bottom: 30px;
 
@@ -181,16 +194,14 @@ address {
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  color:var(--primari-bg-color) ;
 }
 
 /* button */
 
 .btn {
-  min-width: 216px;
-  
-  padding: 10px 32px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
+  min-width: 216px;  
+  padding: 10px 32px; 
 
   font-family: "Roboto", sans-serif;
   font-weight: 700;
@@ -201,6 +212,8 @@ address {
 
   color: var(--primari-bg-color);
   background-color: var(--default-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
 
 .btn:hover,
@@ -234,12 +247,20 @@ padding-top: 94px;
 
 .feature .list {
   display: flex;
-  flex-wrap: wrap;
-  
+  flex-wrap: wrap;  
 }
 
 .feature-item {
   width: 270px;
+}
+ .icon::before{  
+  display: block;
+  content:'';
+  height: 120px;
+  background-image: url(../img/antena.svg);  
+  background-repeat: no-repeat;
+  background-position: center;
+
 }
 
 .feature-item:not(:last-child) {
@@ -247,6 +268,7 @@ padding-top: 94px;
 }
 
 .feature .title {
+  padding-top: 30px;
   margin-bottom: 10px;
 
   font-weight: 700;
@@ -313,6 +335,19 @@ padding-top: 94px;
 }
 .command-item:not(:last-child) {
   margin-right: 30px;
+}
+
+.command-icon::after{
+  display: block;
+  content: '';
+  width: 44px;
+  height: 44px;
+  background-color: #18e85d;
+  background-image: url();
+  block-size: ;
+  background-repeat: no-repeat;
+  background-position: center;
+
 }
 
 .command .title {  
