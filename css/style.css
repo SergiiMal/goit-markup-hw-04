@@ -150,16 +150,29 @@ address {
   display: flex;
   margin-left: auto;
 }
+.top-address-box{
+
+ 
+  
+}
 
 .icon-posht{
   width: 16px;
-  height: 12px; 
-  fill: currentColor; 
+  height: 12px;   
 }
+
 
 .icon-tel {
   width: 10px;
-  height: 16px;
+  height: 16px;  
+}
+
+.icon-tel:hover{
+  fill: var(--accent-color);
+}
+
+.site-nav .icon-tel:hover{
+color: var(--accent-color);
 }
 
 .top-address .item:not(:last-child) {
@@ -263,31 +276,19 @@ padding-top: 94px;
   flex-wrap: wrap;  
 }
 
-.feature-item {
+.feature-item {  
   width: 270px;
-}
- .feature-item::before{  
-  display: block;
-  content:'';
-  height: 120px;    
-  background-repeat: no-repeat;
-  background-position: center;
+  height: 120px;  
 }
 
-.icon-antena::before{
-  background-image: url(../img/antena.svg);
+.feature-box{ 
+  display: flex;
+  justify-content: center;   
 }
 
-.icon-time::before { 
-  background-image: url(../img/time-icon.svg);  
-}
-
-.icon-diagram::before{
-  background-image: url(../img/diagram-icon.svg);
-}
-
-.icon-astronaut::before{
-  background-image: url(../img/astronaut-icon.svg);
+.feature-icon{    
+  width: 70px; 
+  height: 70px;  
 }
 
 .feature-item:not(:last-child) {
@@ -417,6 +418,7 @@ padding-top: 94px;
   width: 44px;
   height: 44px;
   border-radius: 50%; 
+  background-color: #fff;
   
 }
 
