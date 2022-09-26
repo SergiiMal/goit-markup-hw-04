@@ -150,22 +150,6 @@ address {
   margin-left: auto;
 }
 
-.icon-posht{  
-  width: 16px;
-  height: 12px;
-  margin-right: 10px;     
-}
-
-.icon-tel {
-  width: 10px;
-  height: 16px;
-  margin-right: 10px;   
-}
-
-.icon-tel:hover{
-fill: var(--accent-color);
-}
-
 .top-address .item:not(:last-child) {
   margin-right: 50px;
 }
