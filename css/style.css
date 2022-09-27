@@ -466,6 +466,7 @@ padding-top: 94px;
 }
 
 .address .link {
+  
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
@@ -474,6 +475,40 @@ padding-top: 94px;
   color: rgba(255, 255, 255, 0.6);
 }
 
+/* ----join----- */
+
+.bottom-box{
+  display: flex;  
+}
+
+.join .clik {
+  background-color:rgba(255, 255, 255, 0.1);;
+}
+.join .clik .icon{
+  display: flex;
+  margin: auto;
+  
+}
+
+ .join {  
+  width: 206px;
+  height: 80px;
+  margin-top: 20px;
+  margin-left: 70px;
+  margin-bottom: 50px;
+ }
+ 
+.join .title{
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #FFFFFF;
+}
 
 /* ------Portfolio ------ */
 
