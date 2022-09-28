@@ -374,14 +374,7 @@ padding-top: 94px;
   border-radius: 0px 0px 4px 4px;
 }
 
-.command-links .name {  
-  /* font-weight: 500;
-  font-size: 16px;
-  line-height: 1.18;
-  letter-spacing: 0.03em;
-  text-align: center; */
-
-  
+.command-links .name {    
 
   margin-bottom: 10px;
   padding-top: 30px;
@@ -399,40 +392,27 @@ padding-top: 94px;
   color: var(--primary-text-color);
 }
  
-.command-card {
+.command-list{
   width: 206px;
   height: 44px;
 
-  display: flex;  
-
-  margin-left: 32px;
-  margin-right: 32px;
-  margin-bottom: 30px;
-
-}
-
-.command-list{
   display: flex;
+  margin-bottom: 30px;
 }
+.command-item{
+  width: 44px;
+  height: 44px;
 
-.command-item:not(:last-child){
-  margin-right: 10px;
 }
 
 .command-link{
-  
-  width: 44px;
-  height: 44px;
   display: flex;
- display: block;
-  
-  border-radius: 50%;
-  background-color: #188ce8;
+  justify-content: center;
 }
 
 .command-icon{
-  align-items: center;
-  justify-content: center;
+ 
+
 }
 
 
