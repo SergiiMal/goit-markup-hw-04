@@ -479,8 +479,7 @@ padding-top: 94px;
   color: #ffffff;
 }
 
-.address .link {
-  
+.address .link {  
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
@@ -492,32 +491,13 @@ padding-top: 94px;
 /* ----join----- */
 
 .bottom-box{
-  display: flex;  
+  display: flex; 
 }
-
-.join .clik {
-  fill: var(--primari-bg-color) ;
-  background-color:rgba(255, 255, 255, 0.1);
+.join{
+  padding-left: 70px;
 }
-
-.join .clik:hover{
-  background-color: var(--accent-color);
-}
-
-.join .clik .icon{
-  display: flex;
-  margin: auto;  
-}
-
- .join {  
-  width: 206px;
-  height: 80px;
-  margin-top: 20px;
-  margin-left: 70px;
-  margin-bottom: 50px;
- }
  
-.join .title{
+.join-title{
   margin-bottom: 20px;
 
   font-weight: 700;
@@ -528,6 +508,43 @@ padding-top: 94px;
 
   color: #FFFFFF;
 }
+
+.join-list{
+  width: 206px;
+  height: 44px;
+
+  display: flex;  
+}
+
+.join-item:not(:last-child){
+  margin-right: 10px;
+}
+.join-item .current {
+  background-color: var(--accent-color);
+}
+.join-link{
+  width: 44px;
+  height: 44px;
+
+  border-radius: 50%;
+  background-color:rgba(255, 255, 255, 0.1);;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.join-link:hover{
+  background-color: var(--accent-color);
+} 
+
+.join-icon{
+  fill: var(--primari-bg-color);
+}
+
+
+
+
 
 /* ------Portfolio ------ */
 
