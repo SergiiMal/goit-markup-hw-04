@@ -342,12 +342,6 @@ padding-top: 94px;
   padding-top: 94px;
 }
 
-.command .list,
-.command-links {
-  list-style: none;
-  text-decoration: none;
-}
-
 .command .list {
   display: flex;
   text-align: center;  
@@ -374,15 +368,14 @@ padding-top: 94px;
   border-radius: 0px 0px 4px 4px;
 }
 
-.command-links .name {    
-
+.command-name {  
   margin-bottom: 10px;
   padding-top: 30px;
 
   color: var(--title-text-color);
 }
 
-.command-links .profession {
+.command-profession {
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
@@ -393,27 +386,49 @@ padding-top: 94px;
 }
  
 .command-list{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+
   width: 206px;
   height: 44px;
 
-  display: flex;
-  margin-bottom: 30px;
+ 
 }
 .command-item{
-  width: 44px;
-  height: 44px;
+  
+  background-color: #fff;
+  
+  
 
 }
 
 .command-link{
-  display: flex;
-  justify-content: center;
+  width: 44px;
+    height: 44px;
+  
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.command-link:hover .command-icon,
+.command-link:focus .command-icon{
+  background-color: var(--accent-color);
+  fill: var(--primari-bg-color);
 }
 
 .command-icon{
- 
+ fill:#AFB1B8 ;
 
 }
+
+
 
 
 /* ----regular clients----- */
@@ -429,13 +444,9 @@ padding-top: 94px;
 }
 
 .client-box{
-   display: flex;
-   align-items: center;
+   display: flex; 
    justify-content: center; 
   padding-bottom: 94px;  
-}
-.client-icon{
- 
 }
 
 .client-list{
@@ -445,18 +456,20 @@ padding-top: 94px;
 .client-link{
   display: flex; 
   width: 106px;
-  height: 60px;  
-
+  height: 60px; 
   border: 1px solid #AFB1B8;
-  border-radius: 4px;
+    border-radius: 4px;
+
+  
 }
 
 .client-item:not(:last-child){
   margin-right: 30px;
 }
 
-.client-icon{
-  fill: #AFB1B8;;
+.client-icon{ 
+  fill: #AFB1B8;
+  
 }
 
 
@@ -555,7 +568,7 @@ padding-top: 94px;
 }
 
 
-
+xxxbbbxbbbdbdfbdbdfbdfbdfbdfbdbdfbdfbdfbdfb
 
 
 /* ------Portfolio ------ */
