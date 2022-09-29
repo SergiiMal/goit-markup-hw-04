@@ -130,8 +130,8 @@ address {
 
 /* top-address */
 
-.top-address .link.current {
-  /* color: var(--accent-color); */
+.top-address .link.current{
+  color: var(--accent-color);
 }
 
 .site-nav,
@@ -363,7 +363,8 @@ padding-top: 94px;
 
 .command-items{
   background: #ffffff;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
+  0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
@@ -388,33 +389,32 @@ padding-top: 94px;
 .command-list{
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin-bottom: 30px;
+  align-items: center;  
 
   width: 206px;
   height: 44px;
-
- 
+  margin-left: 32px; 
 }
-.command-item{
-  
-  background-color: #fff;
-  
-  
 
+.command-item{  
+  background-color: #fff;
 }
 
 .command-link{
-  width: 44px;
-    height: 44px;
-  
-    border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.1);
-    
+    width: 44px;
+    height: 44px;  
+    border-radius: 50%;  
   
     display: flex;
     align-items: center;
     justify-content: center;
+
+    margin-right: 10px;
+}
+
+.command-link:hover,
+.command-link:focus{
+  background-color:var(--accent-color);
 }
 
 .command-link:hover .command-icon,
@@ -444,19 +444,25 @@ padding-top: 94px;
 }
 
 .client-box{
-   display: flex; 
-   justify-content: center; 
+  display: flex; 
+  justify-content: center; 
   padding-bottom: 94px;  
+
+  width: 1170px;
+  height: 184px;
 }
 
 .client-list{
   display: flex;
+  
 }
 
 .client-link{
   display: flex; 
-  width: 106px;
-  height: 60px; 
+  width: 170px;
+  height: 92px;
+
+ 
   border: 1px solid #AFB1B8;
     border-radius: 4px;
 
@@ -467,10 +473,6 @@ padding-top: 94px;
   margin-right: 30px;
 }
 
-.client-icon{ 
-  fill: #AFB1B8;
-  
-}
 
 
 
