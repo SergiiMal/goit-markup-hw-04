@@ -154,36 +154,26 @@ address {
 
 .top-address .link {
   display: flex;
-  padding: 32px 0;
 
   color: var(--primary-text-color);
 }
+
 .top-address .link:hover .top-icon,
 .top-address .link:focus .top-icon{
   fill: var(--accent-color);
 }
 
- .top-icon{
-  display: flex;  
-  
+ .top-icon{   
   margin-right: 10px;
-  fill: var(--primary-text-color);
-  
+
+  fill: var(--primary-text-color);  
 }
 
  .top-icon:hover,
  .top-icon:focus{
-  fill: var(--accent-color);
- }
-
- .posht .link.current{
-  color: var(--default-color);
+  fill: currentColor;
  }
  
- .top-icon.current{
-  fill: var(--default-color);
-}
-
 /* ---top border--- */
 .border{
   border-bottom:  1px solid #ECECEC;
@@ -274,18 +264,19 @@ padding-top: 94px;
 }
 
 .feature .list {
-  display: flex;
-  flex-wrap: wrap;  
-}
-
-.feature-item {  
-  width: 270px;
-  height: 120px;  
+  display: flex;  
 }
 
 .feature-box{ 
   display: flex;
-  justify-content: center;   
+  justify-content: center; 
+  align-items: center;
+
+  width: 270px;
+  height: 120px; 
+
+  background-color: #F5F4FA;
+  border-radius: 4px;
 }
 
 .feature-icon{    
@@ -381,6 +372,12 @@ padding-top: 94px;
 }
 
 .command-name {  
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;  
+  text-align: center;
+  letter-spacing: 0.03em;
+
   margin-bottom: 10px;
   padding-top: 30px;
 
@@ -424,10 +421,6 @@ padding-top: 94px;
   margin-right: 10px;
   color:#AFB1B8 ;
 }
-.command-link.current {
-  color: var(--primari-bg-color);
-  background-color: var(--accent-color);
-}
 
 .command-link:hover,
 .command-link:focus{
@@ -435,8 +428,7 @@ padding-top: 94px;
 }
 
 .command-link:hover .command-icon,
-.command-link:focus .command-icon{
-  background-color: var(--accent-color);
+.command-link:focus .command-icon{ 
   fill: var(--primari-bg-color);
 }
 
@@ -447,6 +439,16 @@ padding-top: 94px;
 
 /* ----regular clients----- */
 
+.clients{
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.client-box {
+  display: flex;
+  justify-content: center;   
+}
+
 .clients-title{
   font-weight: 700;
   font-size: 36px;
@@ -455,28 +457,23 @@ padding-top: 94px;
   letter-spacing: 0.03em;
 
   padding-bottom: 50px;
-}
 
-.client-box{
-  display: flex; 
-  justify-content: center;
-  
-  padding-bottom: 94px;    
 }
 
 .client-list{  
   display: flex;
   justify-content: center;
-  align-items: center;  
- 
-}
-
-.client-item{ 
-/* width: calc((100%-150)/6); */ 
+  align-items: center; 
+   
 }
 
 .client-item:not(:last-child){
   margin-right: 30px;
+}
+
+.client-item{
+  width: 170px;
+  height: 92px;
 }
 
 .client-link{  
@@ -484,35 +481,28 @@ padding-top: 94px;
   justify-content: center;
   align-items: center;
 
-  width: 170px;
-  height: 92px;
-    
+  width: 100%;
+  height: 100%;    
   
-  border: 1px solid ;
+  border: 1px solid #AFB1B8;
   border-radius: 4px;  
-  color: #AFB1B8;  
-}
-
-.client-link:hover .client-icon,
-.client-link:focus .client-icon{
-  fill: var(--accent-color); 
+  color:#AFB1B8 ;  
 }
 
 .client-link:hover,
-.client-link:focus{
-  color: var(--accent-color);
+.client-link:focus {
+  border: 1px solid var(--accent-color);
 }
-.current{
-  color: var(--default-color);
+
+.client-link:hover>.client-icon,
+.client-link:focus>.client-icon{    
+  fill: var(--accent-color); 
 }
 
  .client-icon{  
   fill: currentColor;  
  }
  
-
-
-
 
 /* address */
 .address-footer {
@@ -557,13 +547,11 @@ align-items: baseline;
 
 .bottom-box{
   display: flex;
-  align-items: baseline;
-  
+  align-items: baseline;  
 }
+
 .join{
   padding-left: 70px;  
-  
-  
 }
  
 .join-title{
@@ -582,16 +570,13 @@ align-items: baseline;
   width: 206px;
   height: 44px;
 
-  display: flex;
-  /* align-items: baseline;   */
+  display: flex;  
 }
 
 .join-item:not(:last-child){
   margin-right: 10px;
 }
-.join-item .current {
-  background-color: var(--accent-color);
-}
+
 .join-link{
   width: 44px;
   height: 44px;
@@ -605,7 +590,8 @@ align-items: baseline;
   color: var(--primari-bg-color);
 }
 
-.join-link:hover{
+.join-link:hover,
+.join-link:focus{
   background-color: var(--accent-color);
 } 
 
