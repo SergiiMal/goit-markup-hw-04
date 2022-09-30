@@ -130,7 +130,7 @@ address {
 
 /* top-address */
 
-.top-address .link.current{
+.top-address .link{
   color: var(--accent-color);
 }
 
@@ -394,19 +394,28 @@ padding-top: 94px;
   width: 206px;
   height: 44px;
   margin-left: 32px; 
+  margin-bottom: 30px;
 }
 
 .command-item{  
   background-color: #fff;
+  
 }
 
 .command-link{
   width: 44px;
   height: 44px;  
-  border-radius: 50%;  
-  background-color: turquoise;
+  border-radius: 50%;   
 
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-right: 10px;
+  color:#AFB1B8 ;
+}
+.command-link.current {
+  color: var(--primari-bg-color);
+  background-color: var(--accent-color);
 }
 
 .command-link:hover,
@@ -421,12 +430,9 @@ padding-top: 94px;
 }
 
 .command-icon{
- fill:#AFB1B8 ;
+ fill:currentColor ;
 
 }
-
-
-
 
 /* ----regular clients----- */
 
@@ -441,33 +447,37 @@ padding-top: 94px;
 }
 
 .client-box{
-  display: flex; 
-  justify-content: center; 
-  padding-bottom: 94px;  
-
-  width: 1170px;
-  height: 184px;
+  display: flex;   
+  
+  padding-bottom: 94px;    
 }
 
 .client-list{
   display: flex;
+  padding-left: 215px;
+ 
+}
+
+.client-item{
+  width: calc((100%-150)/6);
+    
+  border: 1px solid #AFB1B8;
+  border-radius: 4px;
   
 }
 
 .client-link{
-  display: flex; 
-  width: 170px;
-  height: 92px;
-
+  color: #AFB1B8; 
  
-  border: 1px solid #AFB1B8;
-    border-radius: 4px;  
 }
 
 .client-item:not(:last-child){
   margin-right: 30px;
 }
-
+ .client-icon{
+  fill: currentColor;
+  
+ }
 
 
 
@@ -490,7 +500,10 @@ padding-top: 94px;
 
 .address-footer {  
   background: #2f303a;
+display: flex;
+align-items: baseline;
 }
+
 
 .address .item-text,
 .address .item:not(:last-child){
@@ -513,10 +526,14 @@ padding-top: 94px;
 /* ----join----- */
 
 .bottom-box{
-  display: flex; 
+  display: flex;
+  align-items: baseline;
+  
 }
 .join{
-  padding-left: 70px;
+  padding-left: 70px;  
+  
+  
 }
  
 .join-title{
@@ -535,7 +552,8 @@ padding-top: 94px;
   width: 206px;
   height: 44px;
 
-  display: flex;  
+  display: flex;
+  /* align-items: baseline;   */
 }
 
 .join-item:not(:last-child){
@@ -554,6 +572,7 @@ padding-top: 94px;
   display: flex;
   align-items: center;
   justify-content: center;
+  color: var(--primari-bg-color);
 }
 
 .join-link:hover{
@@ -561,7 +580,7 @@ padding-top: 94px;
 } 
 
 .join-icon{
-  fill: var(--primari-bg-color);
+  fill: currentColor;
 }
 
 
